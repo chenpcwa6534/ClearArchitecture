@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PenaltyCardView">
+        <attr name="style" format="enum">
+            <enum name="display_image" value="0"/>
+            <enum name="display_qty" value="1"/>
+        </attr>
+        <attr name="qty_size" format="dimension"/>
+        <attr name="qty_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TeamView">
+        <attr name="type" format="enum">
+            <enum name="home" value="0"/>
+            <enum name="away" value="1"/>
+        </attr>
+        <attr name="name" format="string"/>
+        <attr name="badge" format="reference"/>
+    </declare-styleable>
+</resources>

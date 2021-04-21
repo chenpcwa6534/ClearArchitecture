@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CalendarView">
+        <attr name="calendar_mode" format="enum">
+            <enum name="month" value="0"/>
+            <enum name="week" value="1"/>
+        </attr>
+        <attr name="header_size" format="dimension"/>
+        <attr name="header_color" format="color"/>
+        <attr name="header_background" format="reference"/>
+        <attr name="week_title_color" format="color"/>
+        <attr name="week_title_size" format="dimension"/>
+        <attr name="week_background" format="reference"/>
+        <attr name="week_start" format="enum">
+            <enum name="monday" value="0"/>
+            <enum name="tuesday" value="1"/>
+            <enum name="wednesday" value="2"/>
+            <enum name="thursday" value="3"/>
+            <enum name="friday" value="4"/>
+            <enum name="saturday" value="5"/>
+            <enum name="sunday" value="6"/>
+        </attr>
+        <attr name="limit_before" format="integer"/>
+        <attr name="limit_after" format="integer"/>
+        <attr name="preload_day_length" format="integer"/>
+    </declare-styleable>
+
+
+    <color name="default_header_bg">#FFFFFF</color>
+    <color name="default_header_text">#000000</color>
+    <color name="default_week_text">#000000</color>
+    <color name="default_day_text">#646464</color>
+    <color name="default_current_day_text">#7C2582</color>
+
+    <dimen name="default_header_text">25sp</dimen>
+    <dimen name="default_week_text">20sp</dimen>
+    <dimen name="default_day_text">20sp</dimen>
+</resources>

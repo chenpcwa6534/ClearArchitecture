@@ -1,0 +1,4 @@
+include ':app:mhLib'
+include ':app:arclibrary'
+include ':app'
+rootProject.name = "UniversalScore"

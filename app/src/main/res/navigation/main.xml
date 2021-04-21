@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/apiresponse"
+    app:startDestination="@id/mainFragment">
+
+    <activity
+        android:id="@+id/apiResponseActivity"
+        android:name="com.mh.universalscroe.ui.MainActivity"
+        android:label="ApiResponseActivity"
+        tools:layout="@layout/fragment_api_response"/>
+
+    <fragment
+        android:id="@+id/apiResponseFragment"
+        android:name="com.mh.universalscroe.ui.apiResponse.view.ApiResponseFragment"
+        android:label="ApiResponseFragment"
+        tools:layout="@layout/fragment_api_response"/>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.mh.universalscroe.ui.main.view.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_apiResponseFragment"
+            app:destination="@id/apiResponseFragment" />
+    </fragment>
+
+</navigation>
